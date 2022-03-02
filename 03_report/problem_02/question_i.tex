@@ -1,0 +1,6 @@
+(i). (2 points) \textsl{What are the advantages of looking at the directed version vs. undirected version of the criminal network? ($\sim$150 words, 250 word limit.)}\\
+
+\textbf{Solution}:\\
+The data gives us information about the sender of messages and the receiver of the message. This is a good example of a directed relationship. Nevertheless, if we translate the correspondences between individuals of the network into a undirected graph, like it was done in this problem, we mark outgoing messages in the same manner as incoming messages. This would lead us to a symmetric adjacency matrix $A$ for each phase. Due to a symmetric matrix we can further state $A = A^T$. Hence, the calculation of in-degrees $Ax$ of individual nodes and the out-degree $x^TA$ lead to the same degrees. Analogically, we receive $AA^T = A^TA$ for the calculation of the left- and right-eigenvector centralities. Which would not differentiate between these two centralities.\\
+
+We loose information by producing undirected graphs, although the data could be processed to directed graphs. By usage of undirected graphs we cannot calculate which node sends a lot of messages to how many different other nodes or how the incoming messages are separated. The data lets us do this calculation only by transferring this data into directed graphs.\\

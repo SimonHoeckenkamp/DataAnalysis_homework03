@@ -1,0 +1,11 @@
+(d). (3 points) \textsl{Bibliographic coupling and cocitation can both be taken as an indicator that papers deal with related material. However, they can in practice give noticeably different results. Why? Which measure is more appropriate as an indicator for similarity between papers? (200 word limit.) }\\
+
+\textbf{Solution}\\
+The adjacency matrix $A$ expresses citation relationships between different papers (entry ($i$,$j$) equals 1, if paper $i$ cites paper $j$, it is 0 otherwise).\\
+
+The cocitation matrix $C$ can be calculated with $C = A^T \cdot A$. Two papers are called cocited if both are cited by the same third paper. The entries of $C$ therefore express how often two papers are cited by other papers and weighted accordingly.\\
+
+Bibliographic coupling matrix $B$ can be calculated with $B = A \cdot A^T$. It's entries correspond to the number of common citations between two papers. The weight of each edge is expressed accordingly.\\
+
+The bibliographic coupling is a stronger indicator of similarity of papers. The entries of $B$ represent how much two papers cite the same other papers. If we understand a cited paper as a source of information for a scientific claim, it is likely that two papers with a high number of equal sources of information are more comparable. I.e. if all citations of two papers are identical, there could be assumed, that their fields of work is connected to each other.\\
+

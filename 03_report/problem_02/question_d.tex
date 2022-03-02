@@ -1,0 +1,10 @@
+(d). (5 points) \textsl{In the context of criminal networks, what would each of these metrics teach you about the importance of an actor's role in the traffic? In your own words, could you explain the limitations of degree centrality? In your opinion, which one would be most relevant to identify who is running the illegal activities of the group? Please justify. ($\sim$300 words, 400 word limit.)}\\
+
+\textbf{Solution}:\\
+The degree centrality gives us information about the node which has the most edges to other nodes. But it does not differentiate between the importance of the connected nodes. This model would weigh two nodes with equal node numbers identically, even though one connects to "low-level" drug dealers (without further criminal connections) and one connects to "high-level" drug dealers (with multiple criminal connections).\\
+
+This drawback can be bypassed by using the eigenvector centrality. This model takes into account to which nodes the representative node is connected to. In terms of a drug dealing network the individual node is more important if it is connected to multiple "high-level" rather than "low-level" drug dealers.\\
+
+The betweenness centrality on the other hand tries to weigh how important one node is for the connection between other nodes. A node with a high betweenness centrality could be for example an individual node which connects multiple sub-graphs. If it is removed from the network, the whole network is weakened because it lost its "core" node.\\
+
+When it comes to choose one individual as a so called "mastermind" who connects different groups of the network the betweenness centrality is an adequate indicator. As in the lecture described, a node with a high betweenness centrality breaks a network apart best when removed. And this is exactly what we try to achieve in terms of a criminal network.\\

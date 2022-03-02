@@ -1,0 +1,66 @@
+\documentclass[11pt, a4paper]{report}
+
+\usepackage[utf8]{inputenc} % allow characters like "ü" etc.
+\usepackage[a4paper, left=20mm, right=20mm, top=20mm, bottom=20mm]{geometry} %format of the page
+\usepackage{fancyhdr} %usage of header and footer
+\usepackage{graphicx} %including images
+
+% definition of the header/ footer
+\pagestyle{empty}
+\pagestyle{fancy}
+\rhead{Author: Simon\_2}
+\chead{Written Report - 6.419x Module 3}
+%\rhead{\today}
+
+\parindent 0pt % set indention to zero points
+
+\begin{document}
+
+
+	\input{problem_01/question_c}
+	\vspace{1cm}
+	
+	\input{problem_01/question_d}
+	
+	\newpage
+	\input{problem_02/question_c}
+	\vspace{1cm}
+		
+	\input{problem_02/question_d}
+	\vspace{1cm}	
+	
+	\input{problem_02/question_e}
+	\vspace{1cm}
+	
+	\input{problem_02/question_f}
+	\vspace{1cm}
+	
+	\input{problem_02/question_g}
+	
+	\newpage
+	\input{problem_02/question_h}
+	\vspace{1cm}	
+	
+	\input{problem_02/question_i}	
+	\vspace{1cm}	
+		
+	\input{problem_02/question_j}
+	
+	\newpage
+	\input{problem_03/project}
+	
+	\newpage
+	\renewcommand{\bibname}{References}
+	
+	\begin{thebibliography}{}
+	
+	\bibitem[1]{sparse_matrix} https://math.stackexchange.com/questions/2981167/time-complexity-for-sparse-matrix-multiplication-xxt
+	\bibitem[2]{networks_an_introduction}
+	Newman, M.E.J.; Networks An Introduction. 2010, Oxford University Press
+	\bibitem[3]{facebook_data}
+	https://snap.stanford.edu/data/ego-Facebook.html
+
+	\end{thebibliography}
+
+
+\end{document}

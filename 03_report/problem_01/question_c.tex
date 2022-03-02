@@ -1,0 +1,7 @@
+\textbf{Problem 1}\\
+(c). (2 points) \textsl{How does the time complexity of your solution involving matrix multiplication in part (a) compare to your friend's algorithm? (100 word limit.)}\\
+
+\textbf{Solution}:\\
+The first attempt was creating the cocitation matrix by looping through the adjacency matrix $A$, comparing values and adding those accordingly. This approach has complexity $\mathcal{O}(n^3)$. Matrix multiplications have the complexity $\mathcal{O}(n^3)$ as well, if done with the naive approach. This can be somewhat reduced with different techniques.\\
+
+But due to very sparse adjacency matrices $A$ in terms of citation networks, the complexity of matrix multiplication ($A \cdot A^T$) can be reduced quite remarkably to $\mathcal{O}(k \cdot n)$, where $k$ is the number of non-zero entries.\cite{sparse_matrix} The upper boundary for $k$ is $k \leq n^2$.\\
